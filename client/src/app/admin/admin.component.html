@@ -1,0 +1,18 @@
+<!-- <div class="container">
+  <header class="jumbotron">
+    <p>{{ content }}</p>
+  </header>
+</div> -->
+<app-heading></app-heading>
+<div style="margin: 10% 10% 3% 44%;">
+
+
+  <div class="btn-group" style="width:100%" >
+    <button style="width:25%" (click)="getReport()">Get Today's Reports</button>
+    </div>
+
+  </div>
+  <div *ngIf="errorMessage==true" class="alert alert-danger  d-flex align-items-center" role="alert" style="justify-content: center;">
+    <span class="text" style="display: inline-block;">No entries present for today</span>
+  </div>
+  
